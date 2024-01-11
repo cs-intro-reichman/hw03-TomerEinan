@@ -11,7 +11,19 @@ public class UniqueChars {
      * unless they are space characters.
      */
     public static String uniqueChars(String s) {
-        // Replace the following statement with your code
-        return null;
+        boolean dup = false;
+        string uniqe = "";
+        for (int i = 0; i < s.length(); i++){
+            for (int k = 0; k < uniqe.length; k++){
+                if (s.charAt(i) == uniqe.charAt(k) && s.charAt(i) != 32){
+                    dup = true;
+                }
+            }
+            if (!dup){
+                unique += s.charAt(i);
+                dup = false;
+            }
+        }
+        return uniqe;
     }
 }
