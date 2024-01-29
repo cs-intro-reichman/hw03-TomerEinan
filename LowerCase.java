@@ -11,9 +11,11 @@ public class LowerCase {
     * Non-letter characters are left as is.
     */
     public static String lowerCase(String s) {
+        // # feedback: the return statement is inside the for loop, that's why you only return the first char in the string.
         String updated = "";
         for (int i = 0; i < s.length(); i++){
             if (s.charAt(i) > 64 && s.charAt(i) < 91){
+                // # feedback: updated += (char) (s.charAt(i) + 32); is enough.
                 updated += "" + (char) (s.charAt(i) + 32);
             }
             else{

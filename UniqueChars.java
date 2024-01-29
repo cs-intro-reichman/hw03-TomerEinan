@@ -11,6 +11,8 @@ public class UniqueChars {
      * unless they are space characters.
      */
     public static String uniqueChars(String s) {
+        // # feedback: **Return Statement:**
+ *      // - Ensure that the 'dup' variable is properly used in the logic, and if necessary, consider returning 'dup' to its initial state (false) on each iteration of the outer loop.
         boolean dup = false;
         string uniqe = "";
         for (int i = 0; i < s.length(); i++){
